@@ -28,6 +28,13 @@ namespace MeltingScreen
             grphxBmp.CopyFromScreen(0, 0, Screen.PrimaryScreen.Bounds.X, Screen.PrimaryScreen.Bounds.Y, Screen.PrimaryScreen.Bounds.Size);
             pictureBox1.Image = bmp;
             pictureBox1.Refresh();
+
+            //go fullscreen;
+            this.FormBorderStyle = FormBorderStyle.None;
+            this.WindowState = FormWindowState.Maximized;
+
+            //resize picturebox to screen bounds
+            pictureBox1.Bounds = Screen.PrimaryScreen.Bounds;
         }
     }
 }
