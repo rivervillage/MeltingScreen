@@ -12,14 +12,22 @@ namespace MeltingScreen
 {
     public partial class MainForm : Form
     {
+
+
         public MainForm()
         {
             InitializeComponent();
+
+            
         }
 
         private void btnStart_Click(object sender, EventArgs e)
         {
-
+            Bitmap bmp = new Bitmap(Screen.PrimaryScreen.Bounds.Width, Screen.PrimaryScreen.Bounds.Height);
+            Graphics grphxBmp = Graphics.FromImage(bmp);
+            grphxBmp.CopyFromScreen(0, 0, Screen.PrimaryScreen.Bounds.X, Screen.PrimaryScreen.Bounds.Y, Screen.PrimaryScreen.Bounds.Size);
+            pictureBox1.Image = bmp;
+            pictureBox1.Refresh();
         }
     }
 }
