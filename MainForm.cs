@@ -17,24 +17,42 @@ namespace MeltingScreen
         public MainForm()
         {
             InitializeComponent();
-
             
+
         }
 
         private void btnStart_Click(object sender, EventArgs e)
         {
+
+            pictureBox.Image = TakeScreenshot();
+
+            //go fullscreen;
+            SetFullscreen(true);
+
+            //resize picturebox to screen bounds
+            pictureBox.Bounds = Screen.PrimaryScreen.Bounds;
+        }
+
+        private void SetFullscreen(bool b)
+        {
+            if (b)
+            {
+                this.FormBorderStyle = FormBorderStyle.None;
+                this.WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                this.FormBorderStyle = FormBorderStyle.Sizable;
+                this.WindowState = FormWindowState.Normal;
+            }
+        }
+
+        private Bitmap TakeScreenshot()
+        {
             Bitmap bmp = new Bitmap(Screen.PrimaryScreen.Bounds.Width, Screen.PrimaryScreen.Bounds.Height);
             Graphics grphxBmp = Graphics.FromImage(bmp);
             grphxBmp.CopyFromScreen(0, 0, Screen.PrimaryScreen.Bounds.X, Screen.PrimaryScreen.Bounds.Y, Screen.PrimaryScreen.Bounds.Size);
-            pictureBox1.Image = bmp;
-            pictureBox1.Refresh();
-
-            //go fullscreen;
-            this.FormBorderStyle = FormBorderStyle.None;
-            this.WindowState = FormWindowState.Maximized;
-
-            //resize picturebox to screen bounds
-            pictureBox1.Bounds = Screen.PrimaryScreen.Bounds;
+            return bmp;
         }
     }
 }
