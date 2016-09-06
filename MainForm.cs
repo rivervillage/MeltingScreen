@@ -27,7 +27,7 @@ namespace MeltingScreen
         private void btnStart_Click(object sender, EventArgs e)
         {
 
-            screen = TakeScreenshot();
+            screen = TakeScreenshot(0);
             pictureBox.Image = screen;
 
             //go fullscreen;
@@ -61,6 +61,21 @@ namespace MeltingScreen
             Graphics grphxBmp = Graphics.FromImage(bmp);
             grphxBmp.CopyFromScreen(0, 0, Screen.PrimaryScreen.Bounds.X, Screen.PrimaryScreen.Bounds.Y, Screen.PrimaryScreen.Bounds.Size);
             return bmp;
+        }
+
+        private Bitmap TakeScreenshot(int index)
+        {
+            Bitmap[] screenshots = new Bitmap[Screen.AllScreens.Length];
+            int i = 0;
+            foreach (Screen screen in Screen.AllScreens)
+            {
+                Bitmap screenshot = new Bitmap(screen.Bounds.Width, screen.Bounds.Height);
+                Graphics gfxScreenshot = Graphics.FromImage(screenshot);
+                gfxScreenshot.CopyFromScreen( screen.Bounds.X, screen.Bounds.Y, 0, 0, screen.Bounds.Size, CopyPixelOperation.SourceCopy);
+                screenshots[i] = screenshot;
+                i++;
+            }
+            return screenshots[index];
         }
 
         private void EnableTimer(bool b)
