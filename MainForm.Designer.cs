@@ -28,8 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnStart = new System.Windows.Forms.Button();
             this.pictureBox = new System.Windows.Forms.PictureBox();
+            this.timer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -70,6 +72,7 @@
 
         private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.PictureBox pictureBox;
+        private System.Windows.Forms.Timer timer;
     }
 }
 

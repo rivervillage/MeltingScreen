@@ -54,5 +54,10 @@ namespace MeltingScreen
             grphxBmp.CopyFromScreen(0, 0, Screen.PrimaryScreen.Bounds.X, Screen.PrimaryScreen.Bounds.Y, Screen.PrimaryScreen.Bounds.Size);
             return bmp;
         }
+
+        private void EnableTimer(bool b)
+        {
+            timer.Enabled = b;
+        }
     }
 }
