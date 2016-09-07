@@ -1,18 +1,17 @@
 body {
     background-color: #474747;
 }
- h1{
-     color: azure;
- }
  #background-image{
      height: 83%;
      width: 100%;
      background-image: url(img/background.jpg);
      background-repeat: no-repeat;
      background-position: center top;
+     background-size: 100% 100%;
  }
-#test{
+#btn_redirect{
     position: relative;
     left: 50%;
     top: 50%;
+    transform: translate(-50%, -50%);
 }
