@@ -10,6 +10,7 @@ body {
      background-image: url(DSC03254-Bearbeitet+2.jpg);
  }
 #test{
+    position: relative;
     left: 50%;
     top: 50%;
 }
