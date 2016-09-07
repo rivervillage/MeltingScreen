@@ -15,8 +15,6 @@ namespace MeltingScreen
     public partial class MainForm : Form
     {
 
-        Bitmap screen;
-
         //make borderless window movable
         public const int WM_NCLBUTTONDOWN = 0xA1;
         public const int HT_CAPTION = 0x2;
@@ -29,105 +27,18 @@ namespace MeltingScreen
         public MainForm()
         {
             InitializeComponent();
-
-            
-
         }
 
         private void btnStart_Click(object sender, EventArgs e)
         {
 
-            screen = TakeScreenshot(0);
-            pictureBox.Image = screen;
+            //this.Hide();
 
-            //go fullscreen;
-            SetFullscreen(true);
-
-            //resize picturebox to screen bounds
-            pictureBox.Bounds = Screen.PrimaryScreen.Bounds;
-
-            //enable timer
-            EnableTimer(true);
-
-        }
-
-        private void SetFullscreen(bool b)
-        {
-            if (b)
+            for (int i = 0; i < Screen.AllScreens.Length; i++)
             {
-                this.FormBorderStyle = FormBorderStyle.None;
-                this.WindowState = FormWindowState.Maximized;
+                ShowScreenForm ssf = new ShowScreenForm();
+                ssf.Start(i);
             }
-            else
-            {
-                this.FormBorderStyle = FormBorderStyle.Sizable;
-                this.WindowState = FormWindowState.Normal;
-            }
-        }
-
-        private Bitmap TakeScreenshot()
-        {
-            Bitmap bmp = new Bitmap(Screen.PrimaryScreen.Bounds.Width, Screen.PrimaryScreen.Bounds.Height);
-            Graphics grphxBmp = Graphics.FromImage(bmp);
-            grphxBmp.CopyFromScreen(0, 0, Screen.PrimaryScreen.Bounds.X, Screen.PrimaryScreen.Bounds.Y, Screen.PrimaryScreen.Bounds.Size);
-            return bmp;
-        }
-
-        private Bitmap TakeScreenshot(int index)
-        {
-            Bitmap[] screenshots = new Bitmap[Screen.AllScreens.Length];
-            int i = 0;
-            foreach (Screen screen in Screen.AllScreens)
-            {
-                Bitmap screenshot = new Bitmap(screen.Bounds.Width, screen.Bounds.Height);
-                Graphics gfxScreenshot = Graphics.FromImage(screenshot);
-                gfxScreenshot.CopyFromScreen( screen.Bounds.X, screen.Bounds.Y, 0, 0, screen.Bounds.Size, CopyPixelOperation.SourceCopy);
-                screenshots[i] = screenshot;
-                i++;
-            }
-            return screenshots[index];
-        }
-
-        private void EnableTimer(bool b)
-        {
-            timer.Enabled = b;
-        }
-
-        /// <summary>
-        /// Shifts stepSize amount of pixels downwards.
-        /// </summary>
-        /// <param name="stepSize">How much pixels to shift.</param>
-        private void ShiftPixels(int stepSize)
-        {
-            Random rnd = new Random();
-
-            int r = rnd.Next(0, 1920 - 50);
-
-            Color topColor = screen.GetPixel(0, 0);
-            for (int k = r; k < r+50; k++)
-            {
-                for (int i = 1079; i > 0; i--)
-                {
-                    if (i - stepSize < 0)
-                    {
-                        screen.SetPixel(k, i, screen.GetPixel(k, 0));
-                    }
-                    else
-                    {
-                        screen.SetPixel(k, i, screen.GetPixel(k, i - stepSize));
-                    }
-                }
-            }
-        }
-
-        private void timer_Tick(object sender, EventArgs e)
-        {
-
-
-            Random rnd = new Random();
-
-            ShiftPixels(rnd.Next(1,5));
-            pictureBox.Image = screen;
         }
 
         private int RNG()
@@ -220,4 +131,28 @@ namespace MeltingScreen
 
         }
     }
+
+    class KeyboardMessageFilter : IMessageFilter
+{
+    public bool PreFilterMessage(ref Message m)
+    {
+        if (m.Msg == ((int)Helper.WindowsMessages.WM_KEYDOWN))
+        {
+            switch ((int)m.WParam)
+            {
+                case (int)Keys.Escape:
+                    // Do Something
+                    return true;
+                case (int)Keys.Right:
+                    // Do Something
+                    return true;
+                case (int)Keys.Left:
+                    // Do Something
+                    return true;
+            }
+        }
+
+        return false;
+    }
+}
 }
