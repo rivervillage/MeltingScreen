@@ -3,3 +3,8 @@
  h1{
      color: azure;
  }
+ #background-image{
+     height: 100%;
+     width; 100%;
+     background-image: url(DSC03254-Bearbeitet.jpg);
+ }
