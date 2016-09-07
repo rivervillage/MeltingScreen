@@ -8,6 +8,8 @@ body {
      height: 83%;
      width: 100%;
      background-image: url(img/background.jpg);
+     background-repeat: no-repeat;
+     background-position: center top;
  }
 #test{
     position: relative;
