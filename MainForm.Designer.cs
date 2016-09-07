@@ -28,41 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.btnStart = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.btnMin = new System.Windows.Forms.Button();
             this.btnMax = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.lblTitle = new System.Windows.Forms.Label();
+            this.notifyIcon = new System.Windows.Forms.NotifyIcon(this.components);
             this.SuspendLayout();
             // 
             // btnStart
             // 
-            this.btnStart.Location = new System.Drawing.Point(12, 145);
+            this.btnStart.BackgroundImage = global::MeltingScreen.Properties.Resources.button_normal;
+            this.btnStart.FlatAppearance.BorderSize = 0;
+            this.btnStart.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnStart.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStart.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnStart.Location = new System.Drawing.Point(12, 162);
             this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(75, 22);
-            this.btnStart.TabIndex = 0;
+            this.btnStart.Size = new System.Drawing.Size(75, 23);
+            this.btnStart.TabIndex = 2;
+            this.btnStart.TabStop = false;
             this.btnStart.Text = "Start";
             this.btnStart.UseVisualStyleBackColor = true;
             this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackgroundImage = global::MeltingScreen.Properties.Resources.button_normal;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.Location = new System.Drawing.Point(12, 226);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 2;
-            this.button1.TabStop = false;
-            this.button1.Text = "Start";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // comboBox1
             // 
@@ -75,7 +67,7 @@
             this.comboBox1.Items.AddRange(new object[] {
             "Test",
             "Test"});
-            this.comboBox1.Location = new System.Drawing.Point(93, 145);
+            this.comboBox1.Location = new System.Drawing.Point(93, 163);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 3;
@@ -85,6 +77,7 @@
             // btnMin
             // 
             this.btnMin.BackgroundImage = global::MeltingScreen.Properties.Resources.window_controls_min_normal;
+            this.btnMin.FlatAppearance.BorderColor = System.Drawing.SystemColors.WindowText;
             this.btnMin.FlatAppearance.BorderSize = 0;
             this.btnMin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnMin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
@@ -103,6 +96,7 @@
             // btnMax
             // 
             this.btnMax.BackgroundImage = global::MeltingScreen.Properties.Resources.window_controls_max_normal;
+            this.btnMax.FlatAppearance.BorderColor = System.Drawing.SystemColors.WindowText;
             this.btnMax.FlatAppearance.BorderSize = 0;
             this.btnMax.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnMax.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
@@ -121,6 +115,7 @@
             // btnClose
             // 
             this.btnClose.BackgroundImage = global::MeltingScreen.Properties.Resources.window_controls_close_normal;
+            this.btnClose.FlatAppearance.BorderColor = System.Drawing.SystemColors.WindowText;
             this.btnClose.FlatAppearance.BorderSize = 0;
             this.btnClose.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
@@ -147,19 +142,24 @@
             this.lblTitle.Text = "Melting Screen";
             this.lblTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lblTitle_MouseDown);
             // 
+            // notifyIcon
+            // 
+            this.notifyIcon.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon.Icon")));
+            this.notifyIcon.Text = "Melting Screen";
+            this.notifyIcon.MouseClick += new System.Windows.Forms.MouseEventHandler(this.notifyIcon_MouseClick);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(64)))), ((int)(((byte)(59)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(378, 261);
+            this.ClientSize = new System.Drawing.Size(378, 197);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnMax);
             this.Controls.Add(this.btnMin);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnStart);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -170,14 +170,13 @@
         }
 
         #endregion
-
         private System.Windows.Forms.Button btnStart;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button btnMin;
         private System.Windows.Forms.Button btnMax;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.NotifyIcon notifyIcon;
     }
 }
 

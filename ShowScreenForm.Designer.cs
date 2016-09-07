@@ -36,11 +36,13 @@
             // 
             // pictureBox
             // 
+            this.pictureBox.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox.Location = new System.Drawing.Point(12, 12);
             this.pictureBox.Name = "pictureBox";
             this.pictureBox.Size = new System.Drawing.Size(260, 237);
             this.pictureBox.TabIndex = 0;
             this.pictureBox.TabStop = false;
+            this.pictureBox.Visible = false;
             // 
             // timer
             // 
@@ -56,6 +58,8 @@
             this.KeyPreview = true;
             this.Name = "ShowScreenForm";
             this.Text = "ShowScreenForm";
+            this.TopMost = true;
+            this.TransparencyKey = System.Drawing.SystemColors.Control;
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.ResumeLayout(false);
 

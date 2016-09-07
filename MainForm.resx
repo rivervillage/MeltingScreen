@@ -126,7 +126,105 @@
   <metadata name="btnClose.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <metadata name="notifyIcon.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="notifyIcon.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAIAEBAAAAAAIABoBAAAJgAAACAgAAAAACAAqBAAAI4EAAAoAAAAEAAAACAAAAABACAAAAAAAEAE
+        AAAAAAAAAAAAAAAAAAAAAAAAV1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/56g
+        oP+eoKD/nqCg/56goP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP/l5eX/iIqK/4iKiv/l5eX/nqCg/56goP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP9XXFz/5eXl/1dcXP9XXFz/5eXl/4iKiv/l5eX/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP9XXFz/V1xc/+Xl5f/l5eX/5eXl/+Xl5f9XXFz/5eXl/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP9XXFz/V1xc/1dcXP9BRUb/QUVG/+Xl5f+Iior/nqCg/+Xl5f9XXFz/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP+Iior/iIqK/4iKiv+Iior/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP9XXFz/V1xc/1dcXP9XXFz/V1xc/wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA
+        //8AAP//AAD//wAA//8AAP//AAD//wAA//8oAAAAIAAAAEAAAAABACAAAAAAAIAQAAAAAAAAAAAAAAAA
+        AAAAAAAAV1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP9XXFz/V1xc/1dcXP/l5eX/5eXl/+Xl5f/l5eX/5eXl/+Xl5f/l5eX/5eXl/1dcXP9XXFz/V1xc/1dc
+        XP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP9XXFz/V1xc/1dcXP9XXFz/V1xc/+Xl5f/l5eX/5eXl/+Xl5f/l5eX/5eXl/+Xl5f/l5eX/V1xc/1dc
+        XP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/5eXl/+Xl5f8sLzD/LC8w/ywvMP8sLzD/5eXl/+Xl
+        5f/l5eX/5eXl/+Xl5f/l5eX/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP/l5eX/5eXl/1dcXP9XXFz/V1xc/1dc
+        XP/l5eX/5eXl/+Xl5f/l5eX/5eXl/+Xl5f9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/+Xl5f/l5eX/V1xc/1dc
+        XP9XXFz/V1xc/+Xl5f/l5eX/LC8w/ywvMP/l5eX/5eXl/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/5eXl/+Xl
+        5f/l5eX/5eXl/+Xl5f/l5eX/5eXl/+Xl5f9XXFz/V1xc/+Xl5f/l5eX/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP/l5eX/5eXl/+Xl5f/l5eX/5eXl/+Xl5f/l5eX/5eXl/1dcXP9XXFz/5eXl/+Xl5f9XXFz/V1xc/1dc
+        XP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP9XXFz/V1xc/ywvMP8sLzD/LC8w/ywvMP/l5eX/5eXl/ywvMP8sLzD/V1xc/1dcXP/l5eX/5eXl/1dc
+        XP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/+Xl5f/l5eX/5eXl/+Xl5f/l5eX/5eXl/+Xl
+        5f/l5eX/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/5eXl/+Xl5f/l5eX/5eXl/+Xl
+        5f/l5eX/5eXl/+Xl5f9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP8sLzD/LC8w/ywv
+        MP8sLzD/LC8w/ywvMP8sLzD/LC8w/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dcXP9XXFz/V1xc/1dc
+        XP9XXFz/V1xc/1dcXP9XXFz/V1xc/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+</value>
+  </data>
   <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAXoAAAEFCAYAAADt1CyEAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6

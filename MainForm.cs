@@ -29,17 +29,16 @@ namespace MeltingScreen
             InitializeComponent();
         }
 
+
         private void btnStart_Click(object sender, EventArgs e)
         {
-
-            //this.Hide();
-
             for (int i = 0; i < Screen.AllScreens.Length; i++)
             {
                 ShowScreenForm ssf = new ShowScreenForm();
-                ssf.Start(i);
+                ssf.Start(i, 1);
             }
         }
+
 
         private int RNG()
         {
@@ -128,31 +127,15 @@ namespace MeltingScreen
 
         private void btnMin_MouseClick(object sender, MouseEventArgs e)
         {
-
+            notifyIcon.Visible = true;
+            this.Hide();
         }
-    }
 
-    class KeyboardMessageFilter : IMessageFilter
-{
-    public bool PreFilterMessage(ref Message m)
-    {
-        if (m.Msg == ((int)Helper.WindowsMessages.WM_KEYDOWN))
+        private void notifyIcon_MouseClick(object sender, MouseEventArgs e)
         {
-            switch ((int)m.WParam)
-            {
-                case (int)Keys.Escape:
-                    // Do Something
-                    return true;
-                case (int)Keys.Right:
-                    // Do Something
-                    return true;
-                case (int)Keys.Left:
-                    // Do Something
-                    return true;
-            }
+            this.Show();
+            notifyIcon.Visible = false;
         }
-
-        return false;
     }
-}
+
 }

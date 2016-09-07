@@ -13,23 +13,38 @@ namespace MeltingScreen
     public partial class ShowScreenForm : Form
     {
         Bitmap screen;
+        Screen[] screens = Screen.AllScreens;
+        int currentScreen;
 
         public ShowScreenForm()
         {
             InitializeComponent();
+            this.KeyDown += new KeyEventHandler(ShowScreenForm_KeyDown);
         }
 
-        public void Start(int index)
+        private void ShowScreenForm_KeyDown(object sender, KeyEventArgs e)
         {
+            if (e.KeyCode == Keys.Escape) Application.Exit();
+            e.Handled = false;
+        }
+
+        public void Start(int index, int interval)
+        {
+            currentScreen = index;
             screen = TakeScreenshot(index);
             pictureBox.Image = screen;
-            Show();
-            Screen[] screens = Screen.AllScreens;
-            Location = new Point(screens[index].Bounds.X, screens[index].Bounds.Y);
-            Bounds = screens[index].Bounds;
-            pictureBox.Location = new Point(0, 0); ;
-            pictureBox.Size = new Size(screens[index].Bounds.Width, screens[index].Bounds.Height);
 
+            Show();
+
+            
+            Location = new Point(screens[currentScreen].Bounds.X, screens[currentScreen].Bounds.Y);
+            Bounds = screens[currentScreen].Bounds;
+            pictureBox.Location = new Point(0, 0); ;
+            pictureBox.Size = new Size(screens[currentScreen].Bounds.Width, screens[currentScreen].Bounds.Height);
+
+            pictureBox.Visible = true;
+
+            timer.Interval = interval;
             timer.Enabled = true;
         }
 
@@ -56,12 +71,12 @@ namespace MeltingScreen
         {
             Random rnd = new Random();
 
-            int r = rnd.Next(0, 1920 - 50);
+            int r = rnd.Next(0, screens[currentScreen].Bounds.Width - 50);
 
             Color topColor = screen.GetPixel(0, 0);
             for (int k = r; k < r + 50; k++)
             {
-                for (int i = 1079; i > 0; i--)
+                for (int i = screens[currentScreen].Bounds.Height-1; i > 0; i--)
                 {
                     if (i - stepSize < 0)
                     {
@@ -79,7 +94,7 @@ namespace MeltingScreen
         {
             Random rnd = new Random();
 
-            ShiftPixels(rnd.Next(1, 5));
+            ShiftPixels(rnd.Next(1, 25));
             pictureBox.Image = screen;
         }
     }
