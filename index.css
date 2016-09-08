@@ -29,17 +29,24 @@ body:before{
     filter: blur(5px);
 }
 
+#maingrid{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#description {
+    width: 80%;
+    font-family: 'Prompt', sans-serif;
+    color: white;
+    text-align: justify;
+}
+
 #btn_redirect{
     position: relative;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
-}
-
-#test {
-    position: absolute;
-    left: 50%;
-    top: 40%;
     transform: translate(-50%, -50%);
 }
 
@@ -59,24 +66,20 @@ h1 {
 
 #footer {
     height: auto;
+    width: auto;
     background-color: rgba(50,50,50,0.6);
     position: absolute;
     right: 0;
     bottom: 0;
     left: 0;
-    width: 100%;
     text-align: center;
 }
 
 #copyright:before{
     content: "\00a9 \00a0";
 }
-#description {
-    width: 40%;
-    font-family: 'Prompt', sans-serif;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%,-0%);
-    color: white;
-    text-align: justify;
+
+
+#prgimg{
+    background: url(img/Program.PNG) no-repeat center;
 }
