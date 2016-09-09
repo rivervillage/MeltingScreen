@@ -5,6 +5,7 @@
 	<meta charset="utf-8" />
     
     <link rel="stylesheet" type="text/css" href="semantic/semantic.min.css" />
+    <script src="jquery-3.1.0.min.js"></script>
     <script src="semantic/semantic.min.js"></script>
     
     <link href="https://fonts.googleapis.com/css?family=Prompt:100" rel="stylesheet">
@@ -36,13 +37,32 @@
             <div class="column">
                 <p id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis imperdiet lorem quis turpis elementum tempor. Phasellus id porttitor magna, vel aliquam arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus scelerisque ultricies ex eu dignissim. Integer a ornare ipsum. Duis vel mollis felis. Phasellus at laoreet lorem, id pharetra ipsum. Sed faucibus hendrerit justo, nec tristique ipsum viverra nec. Integer in elit et sem suscipit volutpat et sed arcu. Nunc sed nulla non diam vestibulum accumsan quis at tortor. Etiam lobortis nibh vel sem rutrum, non iaculis ligula euismod. Aenean in lorem mi. Nam eget placerat turpis. Ut tempor est non neque elementum, sed sollicitudin ipsum porttitor.</p>
             </div>
-            <div class="column" id="prgimg"></div>
+            <div class="column" id="prgimg">
+                <div class="ui large image" id="imagedimmer" >
+                    <div class="ui dimmer">
+                        <p id="imagedescription">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rhoncus sodales lorem, nec auctor felis placerat eget. Donec in leo massa. Nunc nisi libero, viverra quis enim non, accumsan vulputate.
+                        </p>
+                    </div>
+                    <img class="ui image" src="img/Program.PNG" >
+                </div>
+            </div>
         </div>
     </div>
     
+    <script>
+    $("#imagedimmer").dimmer({on: 'hover'});
+    </script>
+    
     <div id="footer">
-        <p id="copyright">Tobias Moldan</p>
+        <img id="sfigoico" src="https://www.gravatar.com/avatar/ca2419a7764bceb5f5fcd3397398d397" data-title="Sandro Figo" data-variation="inverted"  class="ui avatar image">
+        <img id="tmoldanico" src="https://www.gravatar.com/avatar/66bbf3647efba47765fb1fef0927e4c7" data-title="Tobias Moldan" data-variation="inverted"  class="ui avatar image">
     </div>
+    
+    <script>
+        $("#tmoldanico").popup();
+        $("#sfigoico").popup();
+    </script>
 
 </body>
 </html>

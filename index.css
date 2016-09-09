@@ -75,11 +75,21 @@ h1 {
     text-align: center;
 }
 
-#copyright:before{
-    content: "\00a9 \00a0";
-}
-
 
 #prgimg{
-    background: url(img/Program.PNG) no-repeat center;
+    margin: auto;
+    width: auto;
+}
+
+#imagedescription{
+    color: white;
+    font-family: 'Prompt', sans-serif;
+}
+
+#imagedimmer{
+    width: auto;
+}
+
+#dimmertext{
+    color: white;
 }
